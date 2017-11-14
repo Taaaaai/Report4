@@ -1,7 +1,13 @@
 public class Main {
     public static void main(String[] args){
-        String str = null;
-        int str2 = str.length();
-        System.out.println(str2);
+        String str;
+        try{
+            str = null;
+            System.out.println(str.length());
+            }catch (NullPointerException e){
+            System.out.println("例外が発生しました。");
+            System.out.println(e.getMessage());
+        }
     }
+
 }
